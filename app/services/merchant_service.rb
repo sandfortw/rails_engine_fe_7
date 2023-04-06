@@ -1,5 +1,4 @@
 class MerchantService
-
   def all_merchants
     @all_merchants ||= get_url('http://localhost:3000/api/v1/merchants')
   end

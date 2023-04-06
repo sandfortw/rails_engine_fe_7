@@ -1,5 +1,4 @@
-class MerchantFacade 
-
+class MerchantFacade
   def initialize(params)
     @params = params
   end
@@ -15,6 +14,4 @@ class MerchantFacade
     json = MerchantService.new.one_merchant(@params[:id])
     Merchant.new(json[:data])
   end
-
- 
 end

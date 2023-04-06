@@ -22,7 +22,7 @@ RSpec.describe MerchantService do
       expect(json[:data][:id]).to be_a(String)
       expect(json[:data][:type]).to be_a(String)
       expect(json[:data][:attributes][:name]).to be_a(String)
-    end  
+    end
   end
 
   describe '#merchant_items' do
