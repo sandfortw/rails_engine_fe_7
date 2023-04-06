@@ -1,5 +1,5 @@
-<h1> Merchant <%= @merchant.id.to_s %></h1>
+<h1> Merchant <%= @facade.merchant.id %></h1>
 
-<%@items.each do |item| %>
+<%@facade.merchant.items.each do |item| %>
   <p> <%= item.name %> </p>
 <% end %>
